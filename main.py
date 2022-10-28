@@ -5,7 +5,7 @@ import preset
 def run():
     '''Main program on bootup. From here, user will decide on a manual screen or preset screen.'''
 
-    print("pls choose between manual or preset")
+    print("please choose between manual or preset")
     choice = input() # choice will either be manual or preset
 
     if choice == "manual":
