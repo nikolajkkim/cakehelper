@@ -36,10 +36,6 @@ def run(preset: str) -> str:
                 continue
 
     for key in preset_dict.keys():
-        new_value_str += key + "-" + preset_dict[key]
+        new_value_str += key + "-" + preset_dict[key] + " "
 
     return new_value_str[:-1]
-
-
-    # CHANGE DISPLAY CHOICES TO RETURN A LIST INSTEAD OF DICT
-    # CHANGE LIST TO DICT IN MANUAL.PY
