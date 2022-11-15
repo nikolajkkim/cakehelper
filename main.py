@@ -42,3 +42,7 @@ def run_main_page(win):
     btn2 = Button(home_screen, text="Manual", font=font2, command=change_to_manual)
     btn2.pack(pady=20)
     home_screen.pack()
+    
+if __name__ == '__main__':
+    run_main_page(win)
+    win.mainloop()
