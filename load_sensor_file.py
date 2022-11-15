@@ -16,23 +16,24 @@ class Load_sensor():
 
         return
     
-    def __init__(self, hx, motor_steps, target_val, motor_num, confirmation_screen, win):
+    #, confirmation_screen, win
+    def __init__(self, hx, motor_steps, target_val, motor_num):
         global flag
         self.hx = hx
         self.motor_steps = motor_steps
         self.target_val = target_val
         self.motor_num = motor_num
-        self.confirmation_screen = confirmation_screen
-        self.win = win
-        self.dispensing = Frame(self.win)
-        flag = True
+        # self.confirmation_screen = confirmation_screen
+        # self.win = win
+        # self.dispensing = Frame(self.win)
+        # flag = True
 
-        self.dispensing.pack(fill='both', expand=1)
-        self.confirmation_screen.pack_forget()
-        label = Label(self.dispensing, text='Loading...')
-        label.pack(pady=20)
-        b = tk.Button(self.dispensing, text="CANCEL", command=self.kill_motor).pack()
-        win.update()
+        # self.dispensing.pack(fill='both', expand=1)
+        # self.confirmation_screen.pack_forget()
+        # label = Label(self.dispensing, text='Loading...')
+        # label.pack(pady=20)
+        # b = tk.Button(self.dispensing, text="CANCEL", command=self.kill_motor).pack()
+        # win.update()
 
 
 
@@ -97,3 +98,7 @@ class Load_sensor():
             self.win.update()
 
         return
+
+
+
+# Function to run loadsensor
